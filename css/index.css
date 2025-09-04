@@ -1,0 +1,395 @@
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('../fonts/Prompt-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px rgb(116, 116, 116) solid;
+
+    position: fixed;
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    z-index: 0;
+    background-color: black;
+}
+
+#logo {
+    font-weight: bolder;
+    font-size: 25px;
+
+    position: relative;
+    top: 30%;
+    left: 50px;
+   
+    z-index: 100;
+}
+
+#logo span {
+    height: 100%;
+}
+
+#profile {
+    width: 50px;
+    position: absolute;
+    right: 50px;
+    bottom: 7%;
+
+    z-index: 100;
+}
+
+#profile img {
+    border-radius: 50%;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#profile:hover {
+    opacity: 70%;
+    scale: 0.9;
+    transition: 0.2s;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+    padding-top: 70px;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 200px;
+    margin: 40px;
+
+    animation: appear 0.5s ease-in-out normal;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    animation: appear 0.5s ease-in-out normal;
+    margin-bottom: 200px;
+}
+
+.gradient {
+    background-image: linear-gradient(135deg, #ffffff, #282828);
+    -webkit-background-clip: text; /* Prefijo para navegadores WebKit (Chrome, Safari) */
+    background-clip: text;
+    color: transparent;
+}
+
+pre {
+    background-color: rgb(26, 26, 26);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+code {
+    font-family: monospace;
+}
+
+.element {
+   padding: 300px 0px;
+}
+
+.element h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.element p {
+    font-size: 20px;
+}
+
+
+aside {
+    position: fixed;
+    left: 0;
+    top: 72px;
+
+    padding: 20px 30px;
+    width: 220px;
+    background-color: black;
+    height: 100vh;
+}
+
+#aside-title {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+    font-weight: bolder;
+    color: #bcbcbc;
+}
+
+#aside-title button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    text-align: center;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 50%;
+
+    width: 25px;
+    height: 25px;
+}
+
+#aside-title button:hover {
+    scale: 1.5;
+    border: 1px #bcbcbc solid;
+}
+
+#aside-title p {
+    margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 15px;
+}
+
+aside {
+  overflow: auto;
+  max-height: 90%;
+}
+
+
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+
+aside::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d ;
+  border-radius: 4px;
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+
+aside {
+  scrollbar-width: thin;
+  scrollbar-color: #1d1d1d transparent;
+}
+
+
+li {
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+li:hover {
+    scale: 1.1;
+}
+
+li a {
+    font-size: 18px;
+    cursor: pointer;
+    color: #bcbcbc ;
+    text-decoration: none;
+}
+
+#sidebar ul li a.active-link {
+  font-weight: bold;
+  color: rgb(255, 255, 255) ;
+}
+
+
+footer {
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    height: 400px;
+
+    position: absolute;
+
+    border-top: 1px rgb(116, 116, 116) solid;
+}
+
+#footer-content {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+}
+
+#footer-content div {
+  width: 100%;
+  padding: 20px;
+  
+  text-align: left;
+}
+
+#footer-content div h3 {
+  margin: 0px;
+}
+
+#footer-content div ul { 
+  padding-left: 0 !important;
+}
+@keyframes appear {
+    0% {
+        scale: 0.7;
+        opacity: 0;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
