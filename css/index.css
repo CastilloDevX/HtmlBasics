@@ -176,28 +176,6 @@ header {
   height: 100%;
 }
 
-#profile {
-  width: 50px;
-  position: absolute;
-  right: 50px;
-  bottom: 7%;
-
-  z-index: 100;
-}
-
-#profile img {
-  border-radius: 50%;
-  width: 100%;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-#profile:hover {
-  opacity: 70%;
-  scale: 0.9;
-  transition: 0.2s;
-}
-
 main {
   padding-top: 70px;
   display: block;
@@ -375,7 +353,7 @@ li a {
 footer {
   background-color: rgb(10, 10, 10);
   width: 100%;
-  height: 400px;
+  min-height: 400px;
 
   position: absolute;
 
@@ -383,7 +361,6 @@ footer {
 }
 
 #footer-content {
-  width: 100%;
   max-width: 1300px;
 
   margin: auto;
@@ -461,13 +438,14 @@ aside {
 
 /* ===== RESPONSIVE ===== */
 
+/* ==== TABLET RESPONSIVE ==== */
 @media (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
 
   #main-title {
-    font-size: 80px;
+    font-size: 200px;
     margin: 120px 0px;
   }
 
@@ -499,8 +477,43 @@ aside {
   footer {
     position: relative;
   }
+
+  #footer-content {
+    flex-direction: column;
+  }
+  
+  #footer-content div {
+    padding: 10px !important;
+  }
 }
 
+/* ==== MOBILE RESPONSIVE ==== */
+@media (max-width: 769px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  #logo {
+    top: 25%;
+    left: 25px
+  }
+
+  .menu-btn {
+    right: 25px;
+    top: 15px;
+  }
+  
+  #main-title {
+    font-size: 150px;
+    margin: 110px 0px;
+  }
+
+  #main-subtitle {
+    font-size: 25px;
+  }
+}
+
+/* ==== COMPUTERS RESPONSIVE ==== */
 @media (min-width: 1025px) {
   #menu-toggle {
     display: none;
