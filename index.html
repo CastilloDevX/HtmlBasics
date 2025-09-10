@@ -1,3 +1,7 @@
+<!--
+  Script developed by: Jose Manuel Castillo Queh
+  For: Web Desing
+-->
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -6,21 +10,21 @@
     <title>HTML Glosary</title>
 
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon" />
   </head>
 
   <body>
     <header>
       <div id="background"></div>
       <a id="logo">
-        <span>&lt; ! &gt;</span>
+        <span>&lt;!&gt;</span>
         <span>HTML Basics</span>
       </a>
-
-      <a id="profile" href="https://github.com/CastilloDevX" target="_blank">
-        <img src="img/Profile.jpg" alt="Author" />
-      </a>
     </header>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-btn">☰</label>  
 
     <aside>
       <div id="aside-title">
@@ -142,214 +146,255 @@
         <li>
           <a href="#object">Object</a>
         </li>
+        <li>
+          <a href="#form">Form</a>
+        </li>
+        <li>
+          <a href="#input">Input</a>
+        </li>
+        <li>
+          <a href="#select">Select</a>
+        </li>
+        <li>
+          <a href="#textarea">Textarea</a>
+        </li>
+        <li>
+          <a href="#label">Label</a>
+        </li>
       </ul>
     </aside>
 
     <main>
-        <h1 class="gradient">HTML Basics</h1>
-        <h2 class="gradient">
-          Elementos aprendidos en <br />
-          programación web en español
-        </h2>
+      <h1 id="main-title" class="gradient">HTML Basics</h1>
+      <h2 id="main-subtitle" class="gradient">
+        Elementos aprendidos en <br />
+        programación web en español
+      </h2>
 
-        <div id="doctype" class="element">
-          <h3>DOCTYPE</h3>
-          <p>
-            La declaración <b>&lt;!DOCTYPE&gt;</b> le indica al navegador qué versión de HTML
-            se está utilizando. En HTML5 se usa <code>&lt;!DOCTYPE html&gt;</code> y asegura
-            que el navegador interprete el código correctamente.
-          </p>
-          <pre><code class="language-html">
+      <div id="doctype" class="element">
+        <h3>DOCTYPE</h3>
+        <p>
+          La declaración <b>&lt;!DOCTYPE&gt;</b> le indica al navegador qué
+          versión de HTML se está utilizando. En HTML5 se usa
+          <code>&lt;!DOCTYPE html&gt;</code> y asegura que el navegador
+          interprete el código correctamente.
+        </p>
+        <pre><code class="language-html">
   &lt;!DOCTYPE html&gt;  
           </code></pre>
-        </div>
+      </div>
 
-        <div id="html" class="element">
-          <h3>HTML</h3>
-          <p>
-            La etiqueta <b>&lt;html&gt;</b> es la raíz de un documento HTML. Contiene todo el contenido
-            de la página: cabecera, cuerpo, scripts y más.
-          </p>
-          <pre><code class="language-html">
+      <div id="html" class="element">
+        <h3>HTML</h3>
+        <p>
+          La etiqueta <b>&lt;html&gt;</b> es la raíz de un documento HTML.
+          Contiene todo el contenido de la página: cabecera, cuerpo, scripts y
+          más.
+        </p>
+        <pre><code class="language-html">
   &lt;html&gt; &lt;/html&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="head" class="element">
-          <h3>Head</h3>
-          <p>
-            La etiqueta <b>&lt;head&gt;</b> contiene metadatos: título de la página, enlaces a hojas
-            de estilo, scripts o descripciones. Estos datos no se muestran directamente al usuario.
-          </p>
-          <pre><code class="language-html">
+      <div id="head" class="element">
+        <h3>Head</h3>
+        <p>
+          La etiqueta <b>&lt;head&gt;</b> contiene metadatos: título de la
+          página, enlaces a hojas de estilo, scripts o descripciones. Estos
+          datos no se muestran directamente al usuario.
+        </p>
+        <pre><code class="language-html">
   &lt;head&gt;
     &lt;title&gt;Mi página&lt;/title&gt;
     &lt;link rel="stylesheet" href="style.css"&gt;
   &lt;/head&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="body" class="element">
-          <h3>Body</h3>
-          <p>
-            La etiqueta <b>&lt;body&gt;</b> contiene todo el contenido visible para el usuario:
-            texto, imágenes, videos, formularios, enlaces y mucho más.
-          </p>
-          <pre><code class="language-html">
+      <div id="body" class="element">
+        <h3>Body</h3>
+        <p>
+          La etiqueta <b>&lt;body&gt;</b> contiene todo el contenido visible
+          para el usuario: texto, imágenes, videos, formularios, enlaces y mucho
+          más.
+        </p>
+        <pre><code class="language-html">
   &lt;body&gt;
     &lt;h1&gt;Hola Mundo&lt;/h1&gt;
     &lt;p&gt;Este es mi primer párrafo.&lt;/p&gt;
   &lt;/body&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="title" class="element">
-          <h3>Title</h3>
-          <p>
-            La etiqueta <b>&lt;title&gt;</b> define el título de la pestaña del navegador.
-            También influye en el SEO (posicionamiento en buscadores).
-          </p>
-          <pre><code class="language-html">
+      <div id="title" class="element">
+        <h3>Title</h3>
+        <p>
+          La etiqueta <b>&lt;title&gt;</b> define el título de la pestaña del
+          navegador. También influye en el SEO (posicionamiento en buscadores).
+        </p>
+        <pre><code class="language-html">
   &lt;title&gt;Mi primera página HTML&lt;/title&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="h1" class="element">
-          <h3>H1</h3>
-          <p>
-            La etiqueta <b>&lt;h1&gt;</b> representa el encabezado de primer nivel, el más importante en la jerarquía de títulos. 
-            Se recomienda usar solo uno por página para mantener una estructura semántica adecuada y mejorar el SEO.
-          </p>
-          <pre><code class="language-html">
+      <div id="h1" class="element">
+        <h3>H1</h3>
+        <p>
+          La etiqueta <b>&lt;h1&gt;</b> representa el encabezado de primer
+          nivel, el más importante en la jerarquía de títulos. Se recomienda
+          usar solo uno por página para mantener una estructura semántica
+          adecuada y mejorar el SEO.
+        </p>
+        <pre><code class="language-html">
   &lt;h1&gt;Título Principal de la Página&lt;/h1&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="h2" class="element">
-          <h3>H2</h3>
-          <p>
-            La etiqueta <b>&lt;h2&gt;</b> representa el encabezado de segundo nivel. Se utiliza para dividir el contenido en secciones principales 
-            que están subordinadas al título principal (h1). Puede haber múltiples elementos h2 en una página.
-          </p>
-          <pre><code class="language-html">
+      <div id="h2" class="element">
+        <h3>H2</h3>
+        <p>
+          La etiqueta <b>&lt;h2&gt;</b> representa el encabezado de segundo
+          nivel. Se utiliza para dividir el contenido en secciones principales
+          que están subordinadas al título principal (h1). Puede haber múltiples
+          elementos h2 en una página.
+        </p>
+        <pre><code class="language-html">
   &lt;h2&gt;Sección Principal del Contenido&lt;/h2&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="h3" class="element">
-          <h3>H3</h3>
-          <p>
-            La etiqueta <b>&lt;h3&gt;</b> representa el encabezado de tercer nivel. Se utiliza para subsecciones dentro de una sección h2. 
-            Ayuda a crear una estructura jerárquica clara del contenido, mejorando la legibilidad y el SEO.
-          </p>
-          <pre><code class="language-html">
+      <div id="h3" class="element">
+        <h3>H3</h3>
+        <p>
+          La etiqueta <b>&lt;h3&gt;</b> representa el encabezado de tercer
+          nivel. Se utiliza para subsecciones dentro de una sección h2. Ayuda a
+          crear una estructura jerárquica clara del contenido, mejorando la
+          legibilidad y el SEO.
+        </p>
+        <pre><code class="language-html">
   &lt;h3&gt;Subsección de Contenido&lt;/h3&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="h4" class="element">
-          <h3>H4</h3>
-          <p>
-            La etiqueta <b>&lt;h4&gt;</b> representa el encabezado de cuarto nivel. Se utiliza para subdivisiones dentro de una sección h3. 
-            Aunque es menos común, es útil para organizar contenido muy detallado o técnico.
-          </p>
-          <pre><code class="language-html">
+      <div id="h4" class="element">
+        <h3>H4</h3>
+        <p>
+          La etiqueta <b>&lt;h4&gt;</b> representa el encabezado de cuarto
+          nivel. Se utiliza para subdivisiones dentro de una sección h3. Aunque
+          es menos común, es útil para organizar contenido muy detallado o
+          técnico.
+        </p>
+        <pre><code class="language-html">
   &lt;h4&gt;Detalles Específicos del Tema&lt;/h4&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="h5" class="element">
-          <h3>H5</h3>
-          <p>
-            La etiqueta <b>&lt;h5&gt;</b> representa el encabezado de quinto nivel. Se utiliza para subdivisiones muy específicas dentro de una sección h4. 
-            Su uso es poco frecuente, pero puede ser necesario en documentos muy extensos o técnicos.
-          </p>
-          <pre><code class="language-html">
+      <div id="h5" class="element">
+        <h3>H5</h3>
+        <p>
+          La etiqueta <b>&lt;h5&gt;</b> representa el encabezado de quinto
+          nivel. Se utiliza para subdivisiones muy específicas dentro de una
+          sección h4. Su uso es poco frecuente, pero puede ser necesario en
+          documentos muy extensos o técnicos.
+        </p>
+        <pre><code class="language-html">
   &lt;h5&gt;Información Adicional Especializada&lt;/h5&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="h6" class="element">
-          <h3>H6</h3>
-          <p>
-            La etiqueta <b>&lt;h6&gt;</b> representa el encabezado de sexto nivel, el menos importante en la jerarquía. 
-            Se utiliza para subdivisiones extremadamente específicas. Es raro necesitar este nivel de detalle en la mayoría de las páginas web.
-          </p>
-          <pre><code class="language-html">
+      <div id="h6" class="element">
+        <h3>H6</h3>
+        <p>
+          La etiqueta <b>&lt;h6&gt;</b> representa el encabezado de sexto nivel,
+          el menos importante en la jerarquía. Se utiliza para subdivisiones
+          extremadamente específicas. Es raro necesitar este nivel de detalle en
+          la mayoría de las páginas web.
+        </p>
+        <pre><code class="language-html">
   &lt;h6&gt;Detalle Mínimo o Nota al Pie&lt;/h6&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="p" class="element">
-          <h3>P</h3>
-          <p>
-            La etiqueta <b>&lt;p&gt;</b> se utiliza para definir un párrafo de texto. Es una de las
-            etiquetas más usadas en HTML. P significa paragraph (párrafo).
-          </p>
-          <pre><code class="language-html">
+      <div id="p" class="element">
+        <h3>P</h3>
+        <p>
+          La etiqueta <b>&lt;p&gt;</b> se utiliza para definir un párrafo de
+          texto. Es una de las etiquetas más usadas en HTML. P significa
+          paragraph (párrafo).
+        </p>
+        <pre><code class="language-html">
   &lt;p&gt;Este es un párrafo en HTML.&lt;/p&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="span" class="element">
-          <h3>Span</h3>
-          <p>
-            La etiqueta <b>&lt;span&gt;</b> es un contenedor en línea genérico que se utiliza para aplicar estilos o manipular 
-            porciones específicas de texto dentro de un elemento más grande. A diferencia de &lt;div&gt;, &lt;span&gt; no crea saltos de línea.
-          </p>
-          <pre><code class="language-html">
+      <div id="span" class="element">
+        <h3>Span</h3>
+        <p>
+          La etiqueta <b>&lt;span&gt;</b> es un contenedor en línea genérico que
+          se utiliza para aplicar estilos o manipular porciones específicas de
+          texto dentro de un elemento más grande. A diferencia de &lt;div&gt;,
+          &lt;span&gt; no crea saltos de línea.
+        </p>
+        <pre><code class="language-html">
   &lt;p&gt;Este es un texto con una &lt;span style="color: red;"&gt;palabra en rojo&lt;/span&gt; usando span.&lt;/p&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="a" class="element">
-          <h3>A</h3>
-          <p>
-            La etiqueta <b>&lt;a&gt;</b> (anchor o ancla) crea hipervínculos a otras páginas web, archivos, ubicaciones dentro 
-            del mismo documento, o cualquier otra URL. Es fundamental para la navegación web.
-          </p>
-          <pre><code class="language-html">
+      <div id="a" class="element">
+        <h3>A</h3>
+        <p>
+          La etiqueta <b>&lt;a&gt;</b> (anchor o ancla) crea hipervínculos a
+          otras páginas web, archivos, ubicaciones dentro del mismo documento, o
+          cualquier otra URL. Es fundamental para la navegación web.
+        </p>
+        <pre><code class="language-html">
   &lt;a href="https://www.ejemplo.com" target="_blank"&gt;Visitar Ejemplo.com&lt;/a&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="ol" class="element">
-          <h3>OL</h3>
-          <p>
-            La etiqueta <b>&lt;ol&gt;</b> (Ordered List) crea una lista ordenada donde los elementos se muestran con números 
-            o letras en secuencia. Es ideal para presentar pasos, instrucciones o cualquier contenido que requiera un orden específico.
-          </p>
-          <pre><code class="language-html">
+      <div id="ol" class="element">
+        <h3>OL</h3>
+        <p>
+          La etiqueta <b>&lt;ol&gt;</b> (Ordered List) crea una lista ordenada
+          donde los elementos se muestran con números o letras en secuencia. Es
+          ideal para presentar pasos, instrucciones o cualquier contenido que
+          requiera un orden específico.
+        </p>
+        <pre><code class="language-html">
   &lt;ol&gt;
     &lt;li&gt;Primer elemento&lt;/li&gt;
     &lt;li&gt;Segundo elemento&lt;/li&gt;
     &lt;li&gt;Tercer elemento&lt;/li&gt;
   &lt;/ol&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="ul" class="element">
-          <h3>UL</h3>
-          <p>
-            La etiqueta <b>&lt;ul&gt;</b> (Unordered List) crea una lista no ordenada donde los elementos se muestran con viñetas. 
-            Se utiliza para presentar elementos que no requieren un orden específico o una secuencia.
-          </p>
-          <pre><code class="language-html">
+      <div id="ul" class="element">
+        <h3>UL</h3>
+        <p>
+          La etiqueta <b>&lt;ul&gt;</b> (Unordered List) crea una lista no
+          ordenada donde los elementos se muestran con viñetas. Se utiliza para
+          presentar elementos que no requieren un orden específico o una
+          secuencia.
+        </p>
+        <pre><code class="language-html">
   &lt;ul&gt;
     &lt;li&gt;Elemento de lista&lt;/li&gt;
     &lt;li&gt;Otro elemento&lt;/li&gt;
     &lt;li&gt;Más elementos&lt;/li&gt;
   &lt;/ul&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="dl" class="element">
-          <h3>DL</h3>
-          <p>
-            La etiqueta <b>&lt;dl&gt;</b> (Description List) crea una lista de descripciones que consiste en términos y sus definiciones. 
-            Se utiliza comúnmente para glosarios, listas de metadatos o para mostrar pares de término-definición.
-          </p>
-          <pre><code class="language-html">
+      <div id="dl" class="element">
+        <h3>DL</h3>
+        <p>
+          La etiqueta <b>&lt;dl&gt;</b> (Description List) crea una lista de
+          descripciones que consiste en términos y sus definiciones. Se utiliza
+          comúnmente para glosarios, listas de metadatos o para mostrar pares de
+          término-definición.
+        </p>
+        <pre><code class="language-html">
   &lt;dl&gt;
     &lt;dt&gt;HTML&lt;/dt&gt;
     &lt;dd&gt;Lenguaje de marcado para crear páginas web.&lt;/dd&gt;
@@ -357,57 +402,63 @@
     &lt;dd&gt;Lenguaje para definir el estilo de documentos HTML.&lt;/dd&gt;
   &lt;/dl&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="li" class="element">
-          <h3>LI</h3>
-          <p>
-            La etiqueta <b>&lt;li&gt;</b> (List Item) define un elemento dentro de una lista, ya sea ordenada (&lt;ol&gt;) o no ordenada (&lt;ul&gt;). 
-            Cada elemento de la lista debe estar envuelto en esta etiqueta.
-          </p>
-          <pre><code class="language-html">
+      <div id="li" class="element">
+        <h3>LI</h3>
+        <p>
+          La etiqueta <b>&lt;li&gt;</b> (List Item) define un elemento dentro de
+          una lista, ya sea ordenada (&lt;ol&gt;) o no ordenada (&lt;ul&gt;).
+          Cada elemento de la lista debe estar envuelto en esta etiqueta.
+        </p>
+        <pre><code class="language-html">
   &lt;ul&gt;
     &lt;li&gt;Primer elemento de la lista&lt;/li&gt;
     &lt;li&gt;Segundo elemento de la lista&lt;/li&gt;
   &lt;/ul&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="dt" class="element">
-          <h3>DT</h3>
-          <p>
-            La etiqueta <b>&lt;dt&gt;</b> (Description Term) define un término en una lista de descripción (&lt;dl&gt;). 
-            Se utiliza junto con &lt;dd&gt; para crear pares de término-definición en listas de descripción.
-          </p>
-          <pre><code class="language-html">
+      <div id="dt" class="element">
+        <h3>DT</h3>
+        <p>
+          La etiqueta <b>&lt;dt&gt;</b> (Description Term) define un término en
+          una lista de descripción (&lt;dl&gt;). Se utiliza junto con &lt;dd&gt;
+          para crear pares de término-definición en listas de descripción.
+        </p>
+        <pre><code class="language-html">
   &lt;dl&gt;
     &lt;dt&gt;HTTP&lt;/dt&gt;
     &lt;dd&gt;Protocolo de transferencia de hipertexto.&lt;/dd&gt;
   &lt;/dl&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="dd" class="element">
-          <h3>DD</h3>
-          <p>
-            La etiqueta <b>&lt;dd&gt;</b> (Description Details) define la descripción o definición de un término en una lista de descripción (&lt;dl&gt;). 
-            Siempre va seguido de un &lt;dt&gt; que define el término que se está describiendo.
-          </p>
-          <pre><code class="language-html">
+      <div id="dd" class="element">
+        <h3>DD</h3>
+        <p>
+          La etiqueta <b>&lt;dd&gt;</b> (Description Details) define la
+          descripción o definición de un término en una lista de descripción
+          (&lt;dl&gt;). Siempre va seguido de un &lt;dt&gt; que define el
+          término que se está describiendo.
+        </p>
+        <pre><code class="language-html">
   &lt;dl&gt;
     &lt;dt&gt;CSS&lt;/dt&gt;
     &lt;dd&gt;Hojas de estilo en cascada, usadas para estilizar páginas web.&lt;/dd&gt;
   &lt;/dl&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="table" class="element">
-          <h3>Table</h3>
-          <p>
-            La etiqueta <b>&lt;table&gt;</b> crea una tabla para mostrar datos tabulares. Dentro de una tabla, 
-            se utilizan filas (&lt;tr&gt;) y celdas (&lt;td&gt; o &lt;th&gt;) para organizar la información de manera estructurada.
-          </p>
-          <pre><code class="language-html">
+      <div id="table" class="element">
+        <h3>Table</h3>
+        <p>
+          La etiqueta <b>&lt;table&gt;</b> crea una tabla para mostrar datos
+          tabulares. Dentro de una tabla, se utilizan filas (&lt;tr&gt;) y
+          celdas (&lt;td&gt; o &lt;th&gt;) para organizar la información de
+          manera estructurada.
+        </p>
+        <pre><code class="language-html">
   &lt;table&gt;
     &lt;tr&gt;
       &lt;th&gt;Nombre&lt;/th&gt;
@@ -419,15 +470,16 @@
     &lt;/tr&gt;
   &lt;/table&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="tr" class="element">
-          <h3>TR</h3>
-          <p>
-            La etiqueta <b>&lt;tr&gt;</b> (Table Row) define una fila dentro de una tabla HTML. 
-            Cada fila contiene una o más celdas, que pueden ser de encabezado (&lt;th&gt;) o de datos (&lt;td&gt;).
-          </p>
-          <pre><code class="language-html">
+      <div id="tr" class="element">
+        <h3>TR</h3>
+        <p>
+          La etiqueta <b>&lt;tr&gt;</b> (Table Row) define una fila dentro de
+          una tabla HTML. Cada fila contiene una o más celdas, que pueden ser de
+          encabezado (&lt;th&gt;) o de datos (&lt;td&gt;).
+        </p>
+        <pre><code class="language-html">
   &lt;table&gt;
     &lt;tr&gt;
       &lt;th&gt;Producto&lt;/th&gt;
@@ -439,15 +491,17 @@
     &lt;/tr&gt;
   &lt;/table&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="td" class="element">
-          <h3>TD</h3>
-          <p>
-            La etiqueta <b>&lt;td&gt;</b> (Table Data) define una celda estándar en una tabla HTML que contiene datos. 
-            Estas celdas se encuentran dentro de las filas (&lt;tr&gt;) y representan el contenido regular de la tabla.
-          </p>
-          <pre><code class="language-html">
+      <div id="td" class="element">
+        <h3>TD</h3>
+        <p>
+          La etiqueta <b>&lt;td&gt;</b> (Table Data) define una celda estándar
+          en una tabla HTML que contiene datos. Estas celdas se encuentran
+          dentro de las filas (&lt;tr&gt;) y representan el contenido regular de
+          la tabla.
+        </p>
+        <pre><code class="language-html">
   &lt;table&gt;
     &lt;tr&gt;
       &lt;td&gt;Dato 1&lt;/td&gt;
@@ -455,15 +509,17 @@
     &lt;/tr&gt;
   &lt;/table&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="th" class="element">
-          <h3>TH</h3>
-          <p>
-            La etiqueta <b>&lt;th&gt;</b> (Table Header) define una celda de encabezado en una tabla HTML. 
-            Estas celdas se utilizan para describir el contenido de las columnas o filas y normalmente se muestran en negrita y centradas.
-          </p>
-          <pre><code class="language-html">
+      <div id="th" class="element">
+        <h3>TH</h3>
+        <p>
+          La etiqueta <b>&lt;th&gt;</b> (Table Header) define una celda de
+          encabezado en una tabla HTML. Estas celdas se utilizan para describir
+          el contenido de las columnas o filas y normalmente se muestran en
+          negrita y centradas.
+        </p>
+        <pre><code class="language-html">
   &lt;table&gt;
     &lt;tr&gt;
       &lt;th&gt;Nombre&lt;/th&gt;
@@ -475,16 +531,17 @@
     &lt;/tr&gt;
   &lt;/table&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="thead" class="element">
-          <h3>Thead</h3>
-          <p>
-            La etiqueta <b>&lt;thead&gt;</b> agrupa el contenido del encabezado en una tabla HTML. 
-            Contiene las filas de encabezado (&lt;tr&gt; con &lt;th&gt;) y ayuda a diferenciar semanticamente 
-            el encabezado del cuerpo de la tabla, mejorando la accesibilidad y el estilo.
-          </p>
-          <pre><code class="language-html">
+      <div id="thead" class="element">
+        <h3>Thead</h3>
+        <p>
+          La etiqueta <b>&lt;thead&gt;</b> agrupa el contenido del encabezado en
+          una tabla HTML. Contiene las filas de encabezado (&lt;tr&gt; con
+          &lt;th&gt;) y ayuda a diferenciar semanticamente el encabezado del
+          cuerpo de la tabla, mejorando la accesibilidad y el estilo.
+        </p>
+        <pre><code class="language-html">
   &lt;table&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -500,16 +557,17 @@
     &lt;/tbody&gt;
   &lt;/table&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="tbody" class="element">
-          <h3>Tbody</h3>
-          <p>
-            La etiqueta <b>&lt;tbody&gt;</b> agrupa el contenido principal del cuerpo de una tabla HTML. 
-            Contiene las filas de datos de la tabla y se utiliza junto con &lt;thead&gt; y &lt;tfoot&gt; 
-            para estructurar semanticamente la tabla.
-          </p>
-          <pre><code class="language-html">
+      <div id="tbody" class="element">
+        <h3>Tbody</h3>
+        <p>
+          La etiqueta <b>&lt;tbody&gt;</b> agrupa el contenido principal del
+          cuerpo de una tabla HTML. Contiene las filas de datos de la tabla y se
+          utiliza junto con &lt;thead&gt; y &lt;tfoot&gt; para estructurar
+          semanticamente la tabla.
+        </p>
+        <pre><code class="language-html">
   &lt;table&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -529,16 +587,17 @@
     &lt;/tbody&gt;
   &lt;/table&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="tfoot" class="element">
-          <h3>Tfoot</h3>
-          <p>
-            La etiqueta <b>&lt;tfoot&gt;</b> agrupa el contenido del pie de una tabla HTML. 
-            Normalmente contiene resúmenes, totales o notas al pie de la tabla. 
-            Aunque se coloca en el código después de &lt;thead&gt;, el navegador lo muestra al final de la tabla.
-          </p>
-          <pre><code class="language-html">
+      <div id="tfoot" class="element">
+        <h3>Tfoot</h3>
+        <p>
+          La etiqueta <b>&lt;tfoot&gt;</b> agrupa el contenido del pie de una
+          tabla HTML. Normalmente contiene resúmenes, totales o notas al pie de
+          la tabla. Aunque se coloca en el código después de &lt;thead&gt;, el
+          navegador lo muestra al final de la tabla.
+        </p>
+        <pre><code class="language-html">
   &lt;table&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -564,28 +623,30 @@
     &lt;/tfoot&gt;
   &lt;/table&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="header" class="element">
-          <h3>Header</h3>
-          <p>
-            La etiqueta <b>&lt;header&gt;</b> representa la cabecera de una página o sección. 
-            Generalmente contiene el logo, menús de navegación o títulos principales.
-          </p>
-          <pre><code class="language-html">
+      <div id="header" class="element">
+        <h3>Header</h3>
+        <p>
+          La etiqueta <b>&lt;header&gt;</b> representa la cabecera de una página
+          o sección. Generalmente contiene el logo, menús de navegación o
+          títulos principales.
+        </p>
+        <pre><code class="language-html">
   &lt;header&gt;
     &lt;h1&gt;Bienvenido a mi sitio&lt;/h1&gt;
   &lt;/header&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="nav" class="element">
-          <h3>Nav</h3>
-          <p>
-            La etiqueta <b>&lt;nav&gt;</b> se usa para definir un menú de navegación en la página.
-            Suele contener enlaces <b>&lt;a&gt;</b> hacia distintas secciones. Nav significa Navigation (Navegación)
-          </p>
-          <pre><code class="language-html">
+      <div id="nav" class="element">
+        <h3>Nav</h3>
+        <p>
+          La etiqueta <b>&lt;nav&gt;</b> se usa para definir un menú de
+          navegación en la página. Suele contener enlaces <b>&lt;a&gt;</b> hacia
+          distintas secciones. Nav significa Navigation (Navegación)
+        </p>
+        <pre><code class="language-html">
   &lt;nav&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href="#home"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
@@ -594,102 +655,109 @@
     &lt;/ul&gt;
   &lt;/nav&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="main" class="element">
-          <h3>Main</h3>
-          <p>
-            La etiqueta <b>&lt;main&gt;</b> indica el contenido principal de la página. Solo debe
-            existir una por documento.
-          </p>
-          <pre><code class="language-html">
+      <div id="main" class="element">
+        <h3>Main</h3>
+        <p>
+          La etiqueta <b>&lt;main&gt;</b> indica el contenido principal de la
+          página. Solo debe existir una por documento.
+        </p>
+        <pre><code class="language-html">
   &lt;main&gt;
     &lt;p&gt;Este es el contenido principal.&lt;/p&gt;
   &lt;/main&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="aside" class="element">
-          <h3>Aside</h3>
-          <p>
-            La etiqueta <b>&lt;aside&gt;</b> se usa para contenido adicional o relacionado, como
-            barras laterales, publicidad o enlaces extra.
-          </p>
-          <pre><code class="language-html">
+      <div id="aside" class="element">
+        <h3>Aside</h3>
+        <p>
+          La etiqueta <b>&lt;aside&gt;</b> se usa para contenido adicional o
+          relacionado, como barras laterales, publicidad o enlaces extra.
+        </p>
+        <pre><code class="language-html">
   &lt;aside&gt;
     &lt;p&gt;Publicidad o enlaces relacionados&lt;/p&gt;
   &lt;/aside&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="footer" class="element">
-          <h3>Footer</h3>
-          <p>
-            La etiqueta <b>&lt;footer&gt;</b> define el pie de página, donde suele colocarse
-            información de contacto, derechos de autor o enlaces a políticas.
-          </p>
-          <pre><code class="language-html">
+      <div id="footer" class="element">
+        <h3>Footer</h3>
+        <p>
+          La etiqueta <b>&lt;footer&gt;</b> define el pie de página, donde suele
+          colocarse información de contacto, derechos de autor o enlaces a
+          políticas.
+        </p>
+        <pre><code class="language-html">
   &lt;footer&gt;
     &lt;p&gt;© 2024 Mi sitio web&lt;/p&gt;
   &lt;/footer&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="img" class="element">
-          <h3>Img</h3>
-          <p>
-            Muestra una imagen en la página. Usa el atributo <b>src</b> para indicar la ruta.
-          </p>
-          <pre><code class="language-html">
+      <div id="img" class="element">
+        <h3>Img</h3>
+        <p>
+          Muestra una imagen en la página. Usa el atributo <b>src</b> para
+          indicar la ruta.
+        </p>
+        <pre><code class="language-html">
   &lt;img src="img/Profile.jpg" alt="Ejemplo de imagen"&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="video" class="element">
-          <h3>Video</h3>
-          <p>
-            Permite incrustar un video en la página. Se puede controlar con el atributo
-            <b>controls</b>.
-          </p>
-          <pre><code class="language-html">
+      <div id="video" class="element">
+        <h3>Video</h3>
+        <p>
+          Permite incrustar un video en la página. Se puede controlar con el
+          atributo
+          <b>controls</b>.
+        </p>
+        <pre><code class="language-html">
   &lt;video controls width="320" src="video/ejemplo.mp4"&gt;&lt;/video&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="source" class="element">
-          <h3>Source</h3>
-          <p>
-            La etiqueta <b>&lt;source&gt;</b> se utiliza dentro de elementos multimedia como &lt;video&gt;, &lt;audio&gt; o &lt;picture&gt; 
-            para especificar múltiples recursos multimedia. Esto permite ofrecer diferentes formatos para garantizar la compatibilidad 
-            con diversos navegadores.
-          </p>
-          <pre><code class="language-html">
+      <div id="source" class="element">
+        <h3>Source</h3>
+        <p>
+          La etiqueta <b>&lt;source&gt;</b> se utiliza dentro de elementos
+          multimedia como &lt;video&gt;, &lt;audio&gt; o &lt;picture&gt; para
+          especificar múltiples recursos multimedia. Esto permite ofrecer
+          diferentes formatos para garantizar la compatibilidad con diversos
+          navegadores.
+        </p>
+        <pre><code class="language-html">
   &lt;video controls width="320"&gt;
     &lt;source src="video/ejemplo.mp4" type="video/mp4"&gt;
     &lt;source src="video/ejemplo.webm" type="video/webm"&gt;
     Tu navegador no soporta el elemento de video.
   &lt;/video&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="audio" class="element">
-          <h3>Audio</h3>
-          <p>
-            Reproduce archivos de audio. Se recomienda el formato MP3 para compatibilidad.
-          </p>
-          <pre><code class="language-html">
+      <div id="audio" class="element">
+        <h3>Audio</h3>
+        <p>
+          Reproduce archivos de audio. Se recomienda el formato MP3 para
+          compatibilidad.
+        </p>
+        <pre><code class="language-html">
   &lt;audio src="audio/ejemplo.mp3" controls&gt;&lt;/audio&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="iframe" class="element">
-          <h3>Iframe</h3>
-          <p>
-            La etiqueta <b>&lt;iframe&gt;</b> (Inline Frame) incrusta otro documento HTML dentro del documento actual. 
-            Se utiliza comúnmente para incorporar contenido externo como videos de YouTube, mapas de Google, 
-            o otras páginas web dentro de una página.
-          </p>
-          <pre><code class="language-html">
+      <div id="iframe" class="element">
+        <h3>Iframe</h3>
+        <p>
+          La etiqueta <b>&lt;iframe&gt;</b> (Inline Frame) incrusta otro
+          documento HTML dentro del documento actual. Se utiliza comúnmente para
+          incorporar contenido externo como videos de YouTube, mapas de Google,
+          o otras páginas web dentro de una página.
+        </p>
+        <pre><code class="language-html">
   &lt;iframe 
     src="https://www.example.com" 
     width="600" 
@@ -697,49 +765,193 @@
     title="Ejemplo de iframe"&gt;
   &lt;/iframe&gt;
           </code></pre>
-        </div>
+      </div>
 
-        <div id="object" class="element">
-          <h3>Object</h3>
-          <p>
-            La etiqueta <b>&lt;object&gt;</b> define un contenedor para un recurso externo, que puede ser 
-            una página web, una imagen, un plugin multimedia o cualquier otro tipo de contenido. 
-            Es más versátil que &lt;iframe&gt; pero menos utilizado en la práctica moderna.
-          </p>
-          <pre><code class="language-html">
+      <div id="object" class="element">
+        <h3>Object</h3>
+        <p>
+          La etiqueta <b>&lt;object&gt;</b> define un contenedor para un recurso
+          externo, que puede ser una página web, una imagen, un plugin
+          multimedia o cualquier otro tipo de contenido. Es más versátil que
+          &lt;iframe&gt; pero menos utilizado en la práctica moderna.
+        </p>
+        <pre><code class="language-html">
   &lt;object data="documento.pdf" type="application/pdf" width="600" height="400"&gt;
     &lt;p&gt;Tu navegador no soporta el elemento object.&lt;/p&gt;
   &lt;/object&gt;
           </code></pre>
-        </div>
+      </div>
+
+      <div id="form" class="element">
+        <h3>Form</h3>
+        <p>
+          La etiqueta <b>&lt;form&gt;</b> se utiliza para crear un formulario
+          que permite al usuario enviar información al servidor. Puede contener
+          <b>inputs, selects, textareas, botones</b> y otros elementos de
+          entrada. Sus atributos más importantes son <b>action</b> (la URL que
+          recibirá los datos) y <b>method</b> (GET o POST).
+        </p>
+        <pre><code class="language-html">
+&lt;form action="/enviar" method="post"&gt;
+  &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+  &lt;input type="text" id="nombre" name="nombre"&gt;
+
+  &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+  </code></pre>
+      </div>
+
+      <div id="input" class="element">
+        <h3>Input</h3>
+        <p>
+          La etiqueta <b>&lt;input&gt;</b> define un campo interactivo donde el
+          usuario puede introducir datos. Existen muchos tipos de
+          <b>input</b> según la información que se necesite:
+          <b
+            >text, password, email, number, date, color, file, checkbox, radio,
+            range, url</b
+          >, entre otros. Además puede tener atributos como <b>placeholder</b>,
+          <b>required</b>, <b>maxlength</b>, <b>min</b> y <b>max</b>.
+        </p>
+        <pre><code class="language-html">
+&lt;!-- Text input --&gt;
+&lt;input type="text" name="usuario" placeholder="Ingresa tu usuario" required&gt;
+
+&lt;!-- Password input --&gt;
+&lt;input type="password" name="clave" placeholder="Contraseña" required&gt;
+
+&lt;!-- Email input --&gt;
+&lt;input type="email" name="correo" placeholder="correo@ejemplo.com"&gt;
+
+&lt;!-- Number input con rango --&gt;
+&lt;input type="number" name="edad" min="1" max="120"&gt;
+
+&lt;!-- Checkbox y Radio --&gt;
+&lt;input type="checkbox" name="suscripcion"&gt; Suscribirse
+&lt;input type="radio" name="genero" value="masculino"&gt; Masculino
+&lt;input type="radio" name="genero" value="femenino"&gt; Femenino
+  </code></pre>
+      </div>
+
+      <div id="select" class="element">
+        <h3>Select</h3>
+        <p>
+          La etiqueta <b>&lt;select&gt;</b> crea un menú desplegable que permite
+          al usuario elegir una opción de varias disponibles. Se utiliza junto
+          con la etiqueta <b>&lt;option&gt;</b> para definir cada opción. Puede
+          tener atributos como <b>name</b>, <b>multiple</b> (permite seleccionar
+          varias opciones) y <b>required</b>.
+        </p>
+        <pre><code class="language-html">
+&lt;label for="pais"&gt;País:&lt;/label&gt;
+&lt;select name="pais" id="pais" required&gt;
+  &lt;option value="" disabled selected&gt;Selecciona tu país&lt;/option&gt;
+  &lt;option value="mx"&gt;México&lt;/option&gt;
+  &lt;option value="es"&gt;España&lt;/option&gt;
+  &lt;option value="ar"&gt;Argentina&lt;/option&gt;
+&lt;/select&gt;
+  </code></pre>
+      </div>
+
+      <div id="textarea" class="element">
+        <h3>Textarea</h3>
+        <p>
+          La etiqueta <b>&lt;textarea&gt;</b> define un área de texto de varias
+          líneas donde el usuario puede introducir información más extensa que
+          en un input normal. Sus atributos importantes incluyen <b>name</b>,
+          <b>rows</b> (filas visibles), <b>cols</b> (columnas visibles),
+          <b>placeholder</b> y <b>maxlength</b>.
+        </p>
+        <pre><code class="language-html">
+&lt;label for="comentario"&gt;Comentario:&lt;/label&gt;
+&lt;textarea id="comentario" name="comentario" rows="5" cols="40" placeholder="Escribe tu comentario aquí..." required&gt;&lt;/textarea&gt;
+  </code></pre>
+      </div>
+
+      <div id="label" class="element">
+        <h3>Label</h3>
+        <p>
+          La etiqueta <b>&lt;label&gt;</b> se utiliza para definir un rótulo
+          para un elemento de formulario, como un <b>input</b> o
+          <b>textarea</b>. Su atributo más importante es <b>for</b>, que debe
+          coincidir con el <b>id</b> del elemento que describe. Esto mejora la
+          accesibilidad y permite que al hacer clic en el label se active el
+          input correspondiente.
+        </p>
+        <pre><code class="language-html">
+&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+&lt;input type="text" id="nombre" name="nombre"&gt;
+
+&lt;label for="comentario"&gt;Comentario:&lt;/label&gt;
+&lt;textarea id="comentario" name="comentario"&gt;&lt;/textarea&gt;
+  </code></pre>
+      </div>
     </main>
 
     <footer>
       <div id="footer-content">
+        <div>
+          <h3 id="logo-footer">&lt; ! &gt; HTML BASICS</h3>
+
+          <p class="footer-desc">
+            HTML Basics es un glosario interactivo y educativo que documenta los
+            elementos fundamentales del lenguaje HTML. Este proyecto está
+            diseñado como recurso de aprendizaje para desarrolladores web
+            principiantes y como referencia rápida para aquellos que desean
+            repasar los conceptos básicos de HTML.
+          </p>
+        </div>
 
         <div>
-          <h3>Redes sociales</h3>
-
+          <h3>Sobre mi</h3>
+          <p class="footer-desc">
+            Soy desarrollador de software junior con experiencia en Python,
+            Java, JavaScript, LuaU (Roblox). Soy desarrollador de software
+            junior apasionado por crear videojuegos y experiencias interactivas.
+            He trabajado en proyectos de diversas ramas, desde automatización y
+            sistemas educativos hasta juegos en Roblox, siempre buscando
+            combinar creatividad y tecnología para desarrollar soluciones
+            innovadoras.
+          </p>
           <ul>
-            <li><a href="">Github</a></li>
+            <li>
+              <a href="https://github.com/CastilloDevX" target="_blank"
+                >Github</a
+              >
+            </li>
           </ul>
         </div>
 
         <div>
           <h3>Marca personal</h3>
           <ul>
-            <li><a href="http://mratomdev.vercel.app/">Pagina oficial</a></li>
-            <li><a href="">Youtube</a></li>
-            <li><a href="">Roblox</a></li>
-            <li><a href="">Roblox Group</a></li>
+            <li>
+              <a href="http://mratomdev.vercel.app/" target="_blank"
+                >Pagina oficial</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@MrAtomDev" target="_blank"
+                >Youtube</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.roblox.com/es/users/1658144627/profile"
+                target="_blank"
+                >Roblox</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.roblox.com/es/communities/16300277/MrAtom-Games#!/about"
+                target="_blank"
+                >Roblox Group</a
+              >
+            </li>
           </ul>
-        </div>
-
-        <div>
-          
         </div>
       </div>
     </footer>
-
   </body>
 </html>
