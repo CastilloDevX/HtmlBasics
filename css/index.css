@@ -170,8 +170,10 @@ header {
   font-size: 25px;
 
   position: relative;
-  top: 30%;
+  top: 25%;
   left: 50px;
+
+  transform: translate(-50%, -50%);
 
   z-index: 100;
 }
