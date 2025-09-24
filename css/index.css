@@ -144,13 +144,13 @@ body {
 
 p,
 code {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5em;
 }
 
 header {
   width: 100%;
-  height: 70px;
+  height: 5rem;
   border-bottom: 1px rgb(116, 116, 116) solid;
 
   position: fixed;
@@ -206,6 +206,13 @@ main {
   margin-bottom: 200px;
 }
 
+#glosary-content {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
 .gradient {
   background-image: linear-gradient(135deg, #ffffff, #282828);
   -webkit-background-clip: text; /* Prefijo para navegadores WebKit (Chrome, Safari) */
@@ -246,7 +253,7 @@ code {
 }
 
 .element {
-  padding: 300px 0px;
+  padding: 5rem 0px;
 }
 
 .element h3 {
@@ -261,7 +268,7 @@ code {
 aside {
   position: fixed;
   left: 0;
-  top: 72px;
+  top: calc(5rem + 1px);
 
   padding: 20px 30px;
   width: 220px;
